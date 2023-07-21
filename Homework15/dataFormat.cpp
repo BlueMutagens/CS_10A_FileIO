@@ -31,6 +31,11 @@ int main()
     
     inputFile.open(file);
     cout<<"Now reading "<<file<<"..."<<endl;
+    
+    if(inputFile.is_open())
+        cout << "File is open!" << endl;
+    else
+        cout << "Try again" << endl;
 
     while(getline(inputFile, temp))
     {
